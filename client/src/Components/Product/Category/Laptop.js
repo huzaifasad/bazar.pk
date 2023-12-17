@@ -127,7 +127,7 @@ export default function Laptop() {
   
  const fetchprod = async () => {
     try {
-      const result = await fetch('http://localhost:1000/laptop/get');
+      const result = await fetch('https://bazar-pk-api-list.vercel.app/laptop/get');
       const products = await result.json();
       console.log(products)
       setData(products);
