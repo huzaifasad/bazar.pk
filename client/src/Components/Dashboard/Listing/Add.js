@@ -38,7 +38,7 @@ export default function Add() {
     console.log('Form Data:', formData);
   
     try {
-      const result = await fetch('http://localhost:1000/laptop/add', {
+      const result = await fetch('https://bazar-pk-api-list.vercel.app/laptop/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
