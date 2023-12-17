@@ -43,7 +43,7 @@ export default function Update() {
     console.log('Form Data:', formData);
   
     try {
-      const result = await fetch(`http://localhost:1000/laptop/update/${params.id}`, {
+      const result = await fetch(`https://bazar-pk-api-list.vercel.app/laptop/update/${params.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ export default function Update() {
   useEffect(() => {
     const setProducts = async () => {
       try {
-        let result = await fetch(`http://localhost:1000/laptop/update/${params.id}`, {
+        let result = await fetch(`https://bazar-pk-api-list.vercel.app/laptop/update/${params.id}`, {
           method: 'GET',
         });
         result = await result.json();
