@@ -17,7 +17,7 @@ app.listen(1000, () => {
 
 app.use(
   cors({
-    origin: ["https://legendary-lolly-034985.netlify.app"],
+    origin: [""],
     methods: ["POST", "GET"],
     credentials: true,
   })
