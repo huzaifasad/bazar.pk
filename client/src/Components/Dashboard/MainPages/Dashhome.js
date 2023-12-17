@@ -7,7 +7,7 @@ export default function Dashhome() {
 
   const fetchData = async () => {
     try {
-      let result = await fetch('http://localhost:1000/laptop/get');
+      let result = await fetch('https://bazar-pk-api-list.vercel.app/laptop/get');
       result = await result.json();
       console.log(result);
       setData(result);
@@ -21,7 +21,7 @@ export default function Dashhome() {
   }, []);
 const handledelete=async(id)=>{
   // alert(id)
-  let result=await fetch(`http://localhost:1000/laptop/delete/${id}`,{
+  let result=await fetch(`https://bazar-pk-api-list.vercel.app/laptop/delete/${id}`,{
     method:"delete"
   })
   result = await result.json();
